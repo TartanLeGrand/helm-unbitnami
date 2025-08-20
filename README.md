@@ -10,7 +10,7 @@
 
 * **Type**: `Chart` (Helm chart) or `Operator` (operator + CRDs).
 * **AH**: Artifact Hub link.
-* **Stats (AH)**: `⭐` stars · `✅` Verified Publisher · `🏷️` Official (auto via CI — see TODO).
+* **Stats (AH)**: `⭐` stars · `✅` Verified Publisher · `🏷️` Official.
 
 > ⚠️ **Note:** Stats are updated automatically by CI. Until the workflow is enabled, the column shows `—`.
 
