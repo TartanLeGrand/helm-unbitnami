@@ -79,43 +79,6 @@
 
 ---
 
-### 🧪 CI sketch for Artifact Hub stats (to adapt)
-
-```yaml
-name: artifacthub-stats
-on:
-  schedule: [{ cron: '0 6 * * *' }]
-  workflow_dispatch: {}
-jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: '3.x' }
-      - run: pip install requests ruamel.yaml
-      - name: Fetch & update table
-        run: |
-          python tools/update_ah_stats.py README.md catalog/entries.yaml
-      - name: Commit
-        run: |
-          git config user.name "ci"
-          git config user.email "ci@users.noreply.github.com"
-          git commit -am "chore(stats): refresh Artifact Hub metrics" || echo "no changes"
-          git push
-```
-
-`tools/update_ah_stats.py` (pseudo‑code):
-
-```python
-# for each entry:
-#   GET https://artifacthub.io/api/v1/packages/helm/{repo}/{name}
-# read fields: stars, verified_publisher, official
-# patch the corresponding cell in README between the markers above
-```
-
----
-
 ### 💬 Future ideas
 
 * Custom *shields.io* badges (JSON endpoint produced by CI) for ⭐/✅/🏷️.
