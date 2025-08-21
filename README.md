@@ -1,6 +1,6 @@
 # 🧭 Awesome Alternatives to Bitnami Helm Charts
 
-> **Context:** Following the **Bitnami Secure Images** transition (Aug 28, 2025), many Bitnami charts will be limited to the `latest` tag and/or moved to `bitnamilegacy`. This table lists **upstream- and vendor‑maintained alternatives** with Artifact Hub links and **stats** (auto‑filled by CI).
+> **Context:** Following the **Bitnami Secure Images** transition (Aug 28, 2025), many Bitnami charts will be limited to the `latest` tag and/or moved to `bitnamilegacy`. This table lists **upstream- and vendor‑maintained alternatives** with Artifact Hub links and **stats**.
 
 > 🙌 **Open contributions:** Everyone can propose charts that aren’t listed yet, and any help to reduce reliance on Bitnami’s *"supra‑governance"* is welcome. Add your entries via PR!
 
