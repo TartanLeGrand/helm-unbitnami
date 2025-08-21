@@ -12,7 +12,7 @@
 * **AH**: Artifact Hub link.
 * **Stats (AH)**: `⭐` stars · `✅` Verified Publisher · `🏷️` Official.
 
-> ⚠️ **Note:** Stats are updated automatically by CI. Until the workflow is enabled, the column shows `—`.
+> ⚠️ **Note:** Stats are updated automatically. Until the badge is enabled, the column shows `—`.
 
 ---
 
